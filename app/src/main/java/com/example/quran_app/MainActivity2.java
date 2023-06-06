@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -6941,6 +6942,7 @@ public class MainActivity2 extends AppCompatActivity {
             " النَّاس"
     };
 
+    TextView t ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -6949,6 +6951,7 @@ public class MainActivity2 extends AppCompatActivity {
 
         Intent in = getIntent();
         String data = in.getStringExtra("SurahName");
+
       //  b1.setText(data);
         int index   = -1;
 
@@ -6960,6 +6963,10 @@ public class MainActivity2 extends AppCompatActivity {
                index = i;
          }
      }
+
+     String Title = urduSurahNames[index];
+        t = findViewById(R.id.textView);
+        t.setText(Title);
         int startIndex = 0;
         int endIndex = 0;
         if (index != -1)
