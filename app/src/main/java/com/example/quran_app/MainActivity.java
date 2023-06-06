@@ -472,11 +472,15 @@ public class MainActivity extends AppCompatActivity {
 
 
                 String inputText = editText.getText().toString();
-                int editTextId = Integer.parseInt(inputText);
-                String name = englishSurahNames[editTextId-1];
-                Intent in = new Intent(MainActivity.this, MainActivity2.class);
-                in.putExtra("SurahName", name);
-                startActivity(in);
+
+                if(!inputText.isEmpty()) {
+                    int editTextId = Integer.parseInt(inputText);
+
+                    String name = englishSurahNames[editTextId - 1];
+                    Intent in = new Intent(MainActivity.this, MainActivity2.class);
+                    in.putExtra("SurahName", name);
+                    startActivity(in);
+                }
 
             }
         });
