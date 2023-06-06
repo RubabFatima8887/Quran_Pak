@@ -14,7 +14,12 @@ public class MainActivity3 extends AppCompatActivity {
         setContentView(R.layout.activity_main3);
         Intent in = getIntent();
         String data = in.getStringExtra("Ayat");
-        TextView TV = findViewById(R.id.textView3);
+        String SN = in.getStringExtra("SurahName");
+        int AN = in.getIntExtra("AyatNo",-1);
+        TextView TV = findViewById(R.id.b1);
+        TextView TV1 = findViewById(R.id.a1);
+
         TV.setText(data);
+        TV1.setText(SN +"آیت نمبر" + AN ) ;
     }
 }

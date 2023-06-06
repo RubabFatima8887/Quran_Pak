@@ -7010,6 +7010,8 @@ public class MainActivity2 extends AppCompatActivity {
                     {
                         Intent in = new Intent(MainActivity2.this, MainActivity3.class);
                         in.putExtra("Ayat",Ayats.get(i+1));
+                        in.putExtra("SurahName",Title);
+                        in.putExtra("AyatNo" , i);
                         startActivity(in);
                         break;
                     }
