@@ -7,9 +7,12 @@
 
     <TextView
         android:id="@+id/a1"
-        android:layout_width="389dp"
+        android:layout_width="match_parent"
         android:layout_height="65dp"
-        android:layout_margin="8dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="40dp"
+        android:gravity="center"
         android:text="Above TextView"
         android:textColor="@color/buttonBackground" />
 
@@ -25,4 +28,3 @@
         android:textColor="@color/buttonBackground"/>
 
 </LinearLayout>
-
